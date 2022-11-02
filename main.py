@@ -1,32 +1,16 @@
-coffee_prices = [(
-  'cappucino',
-  1.5,
-), ('expresso', 1.2), ('mocha', 1.9)]
-expresso = 1.2
-mocha = 1.9
-cappucino = 1.5
-highest_price = 0
-#retrieve the coffee names and prices and price from the above tuple
-for coffee, price in coffee_prices:
-  print(f"coffee type {coffee} and price {price}")
-# create a function for retrieving the highest priced
-# def most_expensive_coffee(price,highest_price): ours
-#   highest_price = 0
-#   for coffee, price in coffee_prices:
-#      if price > highest_price:
-#        return highest_price
-
-
-def my_most_expensive_coffee(coffee_prices):
-  highest_price = 0
-  my_most_expensive_coffee = ''
-  for coffee, price in coffee_prices:
-    if price > highest_price:
-      highest_price = price
-      my_most_expensive_coffee = coffee
-    else:
-      pass
-  return (my_most_expensive_coffee, highest_price)
-
-
-print(my_most_expensive_coffee(coffee_prices))
+# from methods_help import method_help
+# from functions import function
+# from returnStuff import returnS
+from dynamic_functions import check_3Digits, all_positives, sum_less, count_even
+# method_help()
+# function()
+# returnS()
+# sum = 526 + 345
+result = check_3Digits([55, 99, 600, 78, 120,4950, 333, 558, 404, 23])
+print(result)
+positive = all_positives([10, 15, 30 , -8])
+print(positive)
+total = sum_less([200, 32, 50])
+print(total)
+even = count_even([100, 52, 60, 2, 1, 4 , 6, 78])
+print(even)
